@@ -1,0 +1,48 @@
+header {
+  grid-row: 1 / 2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  border-bottom: 0.2rem solid #f0f0f8;
+  .hamburger-and-logo {
+    display: flex;
+    align-items: center;
+    svg {
+      margin-right: 8px;
+      cursor: pointer;
+      &:hover {
+        color: red;
+      }
+    }
+    .logo {
+      text-transform: uppercase;
+      font-size: 2rem;
+      cursor: pointer;
+      &::first-letter {
+        color: red;
+      }
+    }
+  }
+  .search {
+    flex-basis: 30rem;
+  }
+  .actions {
+    flex-basis: 10rem;
+  }
+}
+.dropdown {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  column-gap: 3px;
+  border: 4px solid #f1f0f0;
+  border-radius: 10px;
+  padding: 5px;
+  transition: border-color 300ms ease;
+  &:hover {
+    border-color: lighten(#2b85e4, 10%);
+  }
+}

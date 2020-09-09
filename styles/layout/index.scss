@@ -1,0 +1,12 @@
+.grid-container {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: 5rem 1fr 3rem;
+  @media screen and (max-width: 801px) {
+    grid-template-rows: 9rem 1fr 3rem;
+  }
+  .main {
+    grid-row: 2 / 3;
+  }
+  @import "header.scss";
+}

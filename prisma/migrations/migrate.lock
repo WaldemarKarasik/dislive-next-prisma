@@ -1,0 +1,5 @@
+# Prisma Migrate lockfile v1
+
+20200907003447-create_tables
+20200907005453-update_channels
+20200907021549-update_user_table
